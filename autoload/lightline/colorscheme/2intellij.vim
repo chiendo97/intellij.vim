@@ -5,6 +5,7 @@
 " Last Change: 2019/12/01
 " =============================================================================
 
+let s:debug = [ '#b027af', 123 ]
 let s:mono0 = [ '#282c34', 236 ]
 let s:mono1 = [ '#313640', 238 ]
 let s:mono2 = [ '#5d677a', 243 ]
@@ -47,4 +48,4 @@ let s:p.tabline.tabsel = [ [ s:mono3, s:mono2 ] ]
 let s:p.tabline.middle = [ [ s:mono2, s:mono1] ]
 let s:p.tabline.right = [ [ s:mono0, s:mono3 ] ]
 
-let g:lightline#colorscheme#onehalfdark#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#2intellij#palette = lightline#colorscheme#flatten(s:p)
