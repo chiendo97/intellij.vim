@@ -1,51 +1,40 @@
-" =============================================================================
-" Filename: autoload/lightline/colorscheme/onehalfdark.vim
-" Author: sonph
-" License: MIT License
-" Last Change: 2019/12/01
-" =============================================================================
-
-let s:debug = [ '#b027af', 123 ]
-let s:mono0 = [ '#282c34', 236 ]
-let s:mono1 = [ '#313640', 238 ]
-let s:mono2 = [ '#5d677a', 243 ]
-let s:mono3 = [ '#dcdfe4', 255 ]
-
+" Common colors {{{
+let s:blue   = [ '#61afef', 75 ]
+let s:green  = [ '#98c379', 76 ]
+let s:purple = [ '#c678dd', 176 ]
+let s:red1   = [ '#e06c75', 168 ]
+let s:red2   = [ '#be5046', 168 ]
 let s:yellow = [ '#e5c07b', 180 ]
-let s:red = [ '#e06c75', 168 ]
-let s:magenta = [ '#c678dd', 176 ]
-let s:blue = [ '#61afef', 75 ]
-let s:cyan = [ '#56b6c2', 73 ]
-let s:green = [ '#98c379', 114 ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-let s:p.normal.left = [ [ s:mono0, s:green ], [ s:mono3, s:mono2 ] ]
-let s:p.normal.middle = [ [ s:green, s:mono1 ] ]
-let s:p.normal.right = [ [ s:mono0, s:green ], [ s:mono3, s:mono2 ] ]
+let s:bg    = [ '#abb2bf', 145 ]
+let s:fg    = [ '#282c34', 235 ]
+let s:gray1 = [ '#494b53', 238 ]
+let s:gray2 = [ '#f0f0f0', 255 ]
+let s:gray3 = [ '#d0d0d0', 250 ]
+let s:green = [ '#98c379', 35 ]
+let s:debug = [ '#b027af', 123 ]
 
-let s:p.normal.error = [ [ s:mono0, s:red ] ]
-let s:p.normal.warning = [ [ s:mono0, s:yellow ] ]
+let s:p.inactive.left   = [ [ s:fg,  s:gray3 ], [ s:bg, s:gray3 ] ]
+let s:p.inactive.middle = [ [ s:gray3, s:gray2 ] ]
+let s:p.inactive.right  = [ [ s:bg, s:gray3 ] ]"}}}
 
-let s:p.inactive.left =  [ [ s:mono3, s:mono2 ], [ s:mono3, s:mono2 ] ]
-let s:p.inactive.middle = [ [ s:mono3, s:mono1 ] ]
-let s:p.inactive.right = [ [ s:mono0, s:mono3 ], [ s:mono3, s:mono2 ] ]
-
-let s:p.insert.left = [ [ s:mono0, s:blue ], [ s:mono3, s:mono2 ] ]
-let s:p.insert.middle = [ [ s:blue, s:mono1 ] ]
-let s:p.insert.right = [ [ s:mono0, s:blue ], [ s:mono3, s:mono2 ] ]
-
-let s:p.replace.left = [ [ s:mono0, s:red ], [ s:mono3, s:mono2 ] ]
-let s:p.replace.middle = [ [ s:red, s:mono1 ] ]
-let s:p.replace.right = [ [ s:mono0, s:red ], [ s:mono3, s:mono2 ] ]
-
-let s:p.visual.left = [ [ s:mono0, s:yellow ], [ s:mono3, s:mono2 ] ]
-let s:p.visual.middle = [ [ s:yellow, s:mono1 ] ]
-let s:p.visual.right = [ [ s:mono0, s:yellow ], [ s:mono3, s:mono2 ] ]
-
-let s:p.tabline.left = [ [ s:mono2, s:mono1] ]
-let s:p.tabline.tabsel = [ [ s:mono3, s:mono2 ] ]
-let s:p.tabline.middle = [ [ s:mono2, s:mono1] ]
-let s:p.tabline.right = [ [ s:mono0, s:mono3 ] ]
+" Common {{{
+let s:p.normal.left    = [ [ s:fg, s:green, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.normal.middle  = [ [ s:fg, s:gray2 ] ]
+let s:p.normal.right   = [ [ s:fg, s:green, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.normal.error   = [ [ s:red2, s:bg ] ]
+let s:p.normal.warning = [ [ s:yellow, s:bg ] ]
+let s:p.insert.right   = [ [ s:fg, s:blue, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.insert.left    = [ [ s:fg, s:blue, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.replace.right  = [ [ s:fg, s:red1, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.replace.left   = [ [ s:fg, s:red1, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.visual.right   = [ [ s:fg, s:purple, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.visual.left    = [ [ s:fg, s:purple, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.tabline.left   = [ [ s:fg, s:gray3 ] ]
+let s:p.tabline.tabsel = [ [ s:bg, s:fg, 'bold' ] ]
+let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
+let s:p.tabline.right  = copy(s:p.normal.right)"}}}
 
 let g:lightline#colorscheme#2intellij#palette = lightline#colorscheme#flatten(s:p)
