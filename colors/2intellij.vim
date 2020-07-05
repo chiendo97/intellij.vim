@@ -125,7 +125,7 @@ call s:h("Constant", s:debug, "", "")
 call s:h("String", s:green, "", "")
 call s:h("Character", s:green, "", "")
 call s:h("Number", s:blue, "", "")
-call s:h("Boolean", s:yellow, "", "")
+call s:h("Boolean", s:blue, "", "")
 call s:h("Float", s:yellow, "", "")
 
 call s:h("Identifier", s:cyan, "", "")
@@ -156,11 +156,14 @@ call s:h("Tag", s:fg, "", "")
 call s:h("Delimiter", s:fg, "", "")
 call s:h("SpecialComment", s:fg, "", "")
 call s:h("Debug", s:fg, "", "")
-call s:h("Underlined", s:fg, "", "")
+call s:h("Underlined", s:yellow, "", "underline")
 call s:h("Ignore", s:fg, "", "")
 call s:h("Error", s:red, s:gutter_bg, "")
 call s:h("Todo", s:blue, "", "italic")
 " }
+
+" Custom set to cyan because goFunctionCall follow Type (blue) in `vim-go`
+call s:h("goFunctionCall", s:cyan, "", "")
 
 
 " Plugins {
