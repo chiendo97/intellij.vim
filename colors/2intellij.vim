@@ -17,13 +17,14 @@ let g:colors_name="2intellij"
 let colors_name="2intellij"
 
 
+let s:debug       = { "gui": "#B027AF", "cterm": "123" }
 let s:black       = { "gui": "#383a42", "cterm": "237" }
 let s:red         = { "gui": "#e45649", "cterm": "167" }
 let s:green       = { "gui": "#50a14f", "cterm": "71" }
 let s:yellow      = { "gui": "#c18401", "cterm": "136" }
-let s:blue        = { "gui": "#0184bc", "cterm": "31" }
+let s:blue        = { "gui": "#3b4eb5", "cterm": "61" }
 let s:purple      = { "gui": "#a626a4", "cterm": "127" }
-let s:cyan        = { "gui": "#0997b3", "cterm": "31" }
+let s:cyan        = { "gui": "#2b797f", "cterm": "30" }
 let s:white       = { "gui": "#fafafa", "cterm": "231" }
 
 let s:fg          = s:black
@@ -119,23 +120,23 @@ call s:h("WildMenu", s:fg, "", "")
 
 
 " Syntax colors {
-call s:h("Comment", s:comment_fg, "", "")
-call s:h("Constant", s:cyan, "", "")
+call s:h("Comment", s:comment_fg, "", "italic")
+call s:h("Constant", s:debug, "", "")
 call s:h("String", s:green, "", "")
 call s:h("Character", s:green, "", "")
-call s:h("Number", s:yellow, "", "")
+call s:h("Number", s:blue, "", "")
 call s:h("Boolean", s:yellow, "", "")
 call s:h("Float", s:yellow, "", "")
 
-call s:h("Identifier", s:red, "", "")
-call s:h("Function", s:blue, "", "")
-call s:h("Statement", s:purple, "", "")
+call s:h("Identifier", s:cyan, "", "")
+call s:h("Function", s:cyan, "", "")
+call s:h("Statement", s:blue, "", "")
 
-call s:h("Conditional", s:purple, "", "")
-call s:h("Repeat", s:purple, "", "")
+call s:h("Conditional", s:blue, "", "")
+call s:h("Repeat", s:blue, "", "")
 call s:h("Label", s:purple, "", "")
 call s:h("Operator", s:fg, "", "")
-call s:h("Keyword", s:red, "", "")
+call s:h("Keyword", s:blue, "", "")
 call s:h("Exception", s:purple, "", "")
 
 call s:h("PreProc", s:yellow, "", "")
@@ -144,7 +145,7 @@ call s:h("Define", s:purple, "", "")
 call s:h("Macro", s:purple, "", "")
 call s:h("PreCondit", s:yellow, "", "")
 
-call s:h("Type", s:yellow, "", "")
+call s:h("Type", s:blue, "", "")
 call s:h("StorageClass", s:yellow, "", "")
 call s:h("Structure", s:yellow, "", "")
 call s:h("Typedef", s:yellow, "", "")
@@ -158,7 +159,7 @@ call s:h("Debug", s:fg, "", "")
 call s:h("Underlined", s:fg, "", "")
 call s:h("Ignore", s:fg, "", "")
 call s:h("Error", s:red, s:gutter_bg, "")
-call s:h("Todo", s:purple, "", "")
+call s:h("Todo", s:blue, "", "italic")
 " }
 
 
