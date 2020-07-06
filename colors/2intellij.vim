@@ -8,6 +8,7 @@ let colors_name="2intellij"
 " Colors {{{
 let s:debug        = { "gui": "#B027AF", "cterm": "123" }
 let s:black        = { "gui": "#383a42", "cterm": "237" }
+let s:gray         = { "gui": "#E6E6E6", "cterm": "237" }
 let s:red          = { "gui": "#e45649", "cterm": "167" }
 let s:green        = { "gui": "#50a14f", "cterm": "71" }
 let s:light_yellow = { "gui": "#fffbe6", "cterm": "136" }
@@ -53,7 +54,7 @@ endfun
 
 " User interface colors {{{
 call s:h("Normal", s:fg, s:bg, "")
-call s:h("NonText", s:fg, "", "")
+call s:h("NonText", s:gray, "", "")
 
 call s:h("Cursor", s:bg, s:blue, "")
 call s:h("CursorColumn", "", s:cursor_line, "")
@@ -124,7 +125,7 @@ call s:h("Statement", s:blue, "", "")
 
 call s:h("Conditional", s:blue, "", "")
 call s:h("Repeat", s:blue, "", "")
-call s:h("Label", s:purple, "", "")
+call s:h("Label", s:blue, "", "")
 call s:h("Operator", s:fg, "", "")
 call s:h("Keyword", s:blue, "", "")
 call s:h("Exception", s:purple, "", "")
