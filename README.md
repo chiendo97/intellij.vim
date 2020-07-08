@@ -4,9 +4,18 @@ Light vim colorscheme, is built based on light IntelliJ default theme.
 
 ![light](./screenshots/main.png)
 
+What I used to make this screenshot:
+- Alacritty
+- Neovim
+- My config: [dotfiles](https://github.com/chiendo97/.dotfiles)
+
 ## Features
 - Light color schemes.
 - Support first for GoLang.
+
+## Inspiration
+- [vim-one](https://github.com/rakr/vim-one)
+- [one-half](https://github.com/sonph/onehalf)
 
 ## Screenshots
 You guys can see all screenshots in the [screenshots folder](./screenshots).
