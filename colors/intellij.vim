@@ -2,8 +2,8 @@ set background=light
 highlight clear
 syntax reset
 
-let g:colors_name="2intellij"
-let colors_name="2intellij"
+let g:colors_name="intellij"
+let colors_name="intellij"
 
 " Colors {{{
 let s:debug        = { "gui": "#B027AF", "cterm": "123" }

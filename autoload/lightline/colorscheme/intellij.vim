@@ -37,4 +37,4 @@ let s:p.tabline.tabsel = [ [ s:bg, s:fg, 'bold' ] ]
 let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
 let s:p.tabline.right  = copy(s:p.normal.right)"}}}
 
-let g:lightline#colorscheme#2intellij#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#intellij#palette = lightline#colorscheme#flatten(s:p)
