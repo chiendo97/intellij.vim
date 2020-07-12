@@ -1,12 +1,12 @@
 " Common colors {{{
+let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
+
 let s:blue   = [ '#61afef', 75 ]
 let s:green  = [ '#98c379', 76 ]
 let s:purple = [ '#c678dd', 176 ]
 let s:red1   = [ '#e06c75', 168 ]
 let s:red2   = [ '#be5046', 168 ]
 let s:yellow = [ '#e5c07b', 180 ]
-
-let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:bg    = [ '#abb2bf', 145 ]
 let s:fg    = [ '#282c34', 235 ]
@@ -33,7 +33,7 @@ let s:p.replace.left   = [ [ s:fg, s:red1, 'bold' ], [ s:fg, s:gray3 ] ]
 let s:p.visual.right   = [ [ s:fg, s:purple, 'bold' ], [ s:fg, s:gray3 ] ]
 let s:p.visual.left    = [ [ s:fg, s:purple, 'bold' ], [ s:fg, s:gray3 ] ]
 let s:p.tabline.left   = [ [ s:fg, s:gray3 ] ]
-let s:p.tabline.tabsel = [ [ s:bg, s:fg, 'bold' ] ]
+let s:p.tabline.tabsel = [ [ s:fg, s:green, 'bold' ] ]
 let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
 let s:p.tabline.right  = copy(s:p.normal.right)"}}}
 
