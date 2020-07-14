@@ -157,34 +157,34 @@ call s:h("Todo", s:blue, "", "italic")
 " }}}
 
 " {{{ Golang
-exe 'hi goPackage guifg='s:blue
-exe 'hi goImport guifg='s:blue
-exe 'hi goVar guifg='s:blue
-exe 'hi goConst guifg='s:blue
+call s:h("goPackage", s:blue, "", "")
+call s:h("goImport", s:blue, "", "")
+call s:h("goVar", s:blue, "", "")
+call s:h("goConst", s:blue, "", "")
 
-exe 'hi goFunction guifg='s:slate
-exe 'hi goFunctionCall guifg='s:slate
-exe 'hi goReceiverType guifg='s:lightblue
-exe 'hi goReceiverVar guifg='s:slate
+call s:h("goFunction", s:slate, "", "")
+call s:h("goFunctionCall", s:slate, "", "")
+call s:h("goReceiverType", s:lightblue, "", "")
+call s:h("goReceiverVar", s:slate, "", "")
 
-exe 'hi goStatement guifg='s:blue
-exe 'hi goConditional guifg='s:blue
-exe 'hi goLabel guifg='s:blue
-exe 'hi goRepeat guifg='s:blue
+call s:h("goStatement", s:blue, "", "")
+call s:h("goConditional", s:blue, "", "")
+call s:h("goLabel", s:blue, "", "")
+call s:h("goRepeat", s:blue, "", "")
 
-exe 'hi goType guifg='s:blue
-exe 'hi goSignedInts guifg='s:blue
-exe 'hi goUnsignedInts guifg='s:blue
-exe 'hi goFloats guifg='s:blue
-exe 'hi goComplexes guifg='s:blue
+call s:h("goType", s:blue, "", "")
+call s:h("goSignedInts", s:blue, "", "")
+call s:h("goUnsignedInts", s:blue, "", "")
+call s:h("goFloats", s:blue, "", "")
+call s:h("goComplexes", s:blue, "", "")
 
-exe 'hi goBuiltins guifg='s:slate
-exe 'hi goBoolean guifg='s:blue
-exe 'hi goPredefinedIdentifiers guifg='s:blue
+call s:h("goBuiltins", s:slate, "", "")
+call s:h("goBoolean", s:blue, "", "")
+call s:h("goPredefinedIdentifiers", s:blue, "", "")
 
-exe 'hi goDeclType guifg='s:blue
-exe 'hi goDeclaration guifg='s:blue
-exe 'hi goParamType guifg='s:blue
+call s:h("goDeclType", s:blue, "", "")
+call s:h("goDeclaration", s:blue, "", "")
+call s:h("goParamType", s:blue, "", "")
 " }}}
 
 " Plugins {{{
