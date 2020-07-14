@@ -13,13 +13,10 @@ let s:red          = { "gui": "#e45649", "cterm": "167" }
 let s:green        = { "gui": "#50a14f", "cterm": "71" }
 let s:light_yellow = { "gui": "#fffbe6", "cterm": "136" }
 let s:yellow       = { "gui": "#c18401", "cterm": "136" }
-let s:blue         = { "gui": "#001cac", "cterm": "18" }
-let s:lightblue    = { "gui": "#2469d2", "cterm": "26" }
+let s:blue         = { "gui": "#3b4eb5", "cterm": "61" }
 let s:purple       = { "gui": "#a626a4", "cterm": "127" }
-let s:cyan         = { "gui": "#007074", "cterm": "6" }
+let s:cyan         = { "gui": "#2b797f", "cterm": "30" }
 let s:white        = { "gui": "#fafafa", "cterm": "231" }
-let s:brown        = { "gui": "#855800", "cterm": "136" }
-let s:dark         = { "gui": "#000000", "cterm": "0" }
 
 let s:fg           = s:black
 let s:bg           = s:white
@@ -157,35 +154,8 @@ call s:h("Todo", s:blue, "", "italic")
 " }}}
 
 " {{{ Golang
-exe 'hi goPackage guifg='s:blue
-exe 'hi goImport guifg='s:blue
-exe 'hi goVar guifg='s:blue
-exe 'hi goConst guifg='s:blue
-
-exe 'hi goFunction guifg='s:slate
-exe 'hi goFunctionCall guifg='s:slate
-exe 'hi goReceiverType guifg='s:lightblue
-exe 'hi goReceiverVar guifg='s:slate
-
-exe 'hi goStatement guifg='s:blue
-exe 'hi goConditional guifg='s:blue
-exe 'hi goLabel guifg='s:blue
-exe 'hi goRepeat guifg='s:blue
-
-exe 'hi goType guifg='s:blue
-exe 'hi goSignedInts guifg='s:blue
-exe 'hi goUnsignedInts guifg='s:blue
-exe 'hi goFloats guifg='s:blue
-exe 'hi goComplexes guifg='s:blue
-
-exe 'hi goBuiltins guifg='s:slate
-exe 'hi goBoolean guifg='s:blue
-exe 'hi goPredefinedIdentifiers guifg='s:blue
-
-exe 'hi goDeclType guifg='s:blue
-exe 'hi goDeclaration guifg='s:blue
-exe 'hi goParamType guifg='s:blue
-" }}}
+" Custom set to cyan because goFunctionCall follow Type (blue) in `vim-go`
+call s:h("goFunctionCall", s:cyan, "", "")"}}}
 
 " Plugins {{{
 " GitGutter
