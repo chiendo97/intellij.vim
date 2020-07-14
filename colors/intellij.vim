@@ -13,13 +13,10 @@ let s:red          = { "gui": "#e45649", "cterm": "167" }
 let s:green        = { "gui": "#50a14f", "cterm": "71" }
 let s:light_yellow = { "gui": "#fffbe6", "cterm": "136" }
 let s:yellow       = { "gui": "#c18401", "cterm": "136" }
-let s:blue         = { "gui": "#001cac", "cterm": "18" }
-let s:lightblue    = { "gui": "#2469d2", "cterm": "26" }
+let s:blue         = { "gui": "#3b4eb5", "cterm": "61" }
 let s:purple       = { "gui": "#a626a4", "cterm": "127" }
-let s:cyan         = { "gui": "#007074", "cterm": "6" }
+let s:cyan         = { "gui": "#2b797f", "cterm": "30" }
 let s:white        = { "gui": "#fafafa", "cterm": "231" }
-let s:brown        = { "gui": "#855800", "cterm": "136" }
-let s:dark         = { "gui": "#000000", "cterm": "0" }
 
 let s:fg           = s:black
 let s:bg           = s:white
