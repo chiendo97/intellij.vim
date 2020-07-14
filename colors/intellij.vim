@@ -157,6 +157,11 @@ call s:h("Todo", s:blue, "", "italic")
 " }}}
 
 " {{{ Golang
+let g:go_highlight_functions = 1
+let g:go_highlight_function_parameters = 0
+let g:go_highlight_function_calls = 1
+let g:go_highlight_types = 0
+
 call s:h("goPackage", s:blue, "", "")
 call s:h("goImport", s:blue, "", "")
 call s:h("goVar", s:blue, "", "")
