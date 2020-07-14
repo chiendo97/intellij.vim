@@ -162,10 +162,10 @@ call s:h("goImport", s:blue, "", "")
 call s:h("goVar", s:blue, "", "")
 call s:h("goConst", s:blue, "", "")
 
-call s:h("goFunction", s:slate, "", "")
-call s:h("goFunctionCall", s:slate, "", "")
+call s:h("goFunction", s:cyan, "", "")
+call s:h("goFunctionCall", s:cyan, "", "")
 call s:h("goReceiverType", s:lightblue, "", "")
-call s:h("goReceiverVar", s:slate, "", "")
+call s:h("goReceiverVar", s:cyan, "", "")
 
 call s:h("goStatement", s:blue, "", "")
 call s:h("goConditional", s:blue, "", "")
@@ -178,7 +178,7 @@ call s:h("goUnsignedInts", s:blue, "", "")
 call s:h("goFloats", s:blue, "", "")
 call s:h("goComplexes", s:blue, "", "")
 
-call s:h("goBuiltins", s:slate, "", "")
+call s:h("goBuiltins", s:cyan, "", "")
 call s:h("goBoolean", s:blue, "", "")
 call s:h("goPredefinedIdentifiers", s:blue, "", "")
 
