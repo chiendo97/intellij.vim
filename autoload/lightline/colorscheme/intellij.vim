@@ -18,23 +18,25 @@ let s:debug = [ '#b027af', 123 ]
 
 let s:p.inactive.left   = [ [ s:fg,  s:gray3 ], [ s:bg, s:gray3 ] ]
 let s:p.inactive.middle = [ [ s:gray3, s:gray2 ] ]
-let s:p.inactive.right  = [ [ s:bg, s:gray3 ] ]"}}}
+let s:p.inactive.right  = [ [ s:bg, s:gray3 ] ]
+"}}}
 
 " Common {{{
-let s:p.normal.left    = [ [ s:fg, s:green, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.normal.left    = [ [ s:fg, s:green  ], [ s:fg, s:gray3 ] ]
 let s:p.normal.middle  = [ [ s:fg, s:gray2 ] ]
-let s:p.normal.right   = [ [ s:fg, s:green, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.normal.right   = [ [ s:fg, s:green  ], [ s:fg, s:gray3 ] ]
 let s:p.normal.error   = [ [ s:red2, s:bg ] ]
 let s:p.normal.warning = [ [ s:yellow, s:bg ] ]
-let s:p.insert.right   = [ [ s:fg, s:blue, 'bold' ], [ s:fg, s:gray3 ] ]
-let s:p.insert.left    = [ [ s:fg, s:blue, 'bold' ], [ s:fg, s:gray3 ] ]
-let s:p.replace.right  = [ [ s:fg, s:red1, 'bold' ], [ s:fg, s:gray3 ] ]
-let s:p.replace.left   = [ [ s:fg, s:red1, 'bold' ], [ s:fg, s:gray3 ] ]
-let s:p.visual.right   = [ [ s:fg, s:purple, 'bold' ], [ s:fg, s:gray3 ] ]
-let s:p.visual.left    = [ [ s:fg, s:purple, 'bold' ], [ s:fg, s:gray3 ] ]
+let s:p.insert.right   = [ [ s:fg, s:blue  ], [ s:fg, s:gray3 ] ]
+let s:p.insert.left    = [ [ s:fg, s:blue  ], [ s:fg, s:gray3 ] ]
+let s:p.replace.right  = [ [ s:fg, s:red1  ], [ s:fg, s:gray3 ] ]
+let s:p.replace.left   = [ [ s:fg, s:red1  ], [ s:fg, s:gray3 ] ]
+let s:p.visual.right   = [ [ s:fg, s:purple  ], [ s:fg, s:gray3 ] ]
+let s:p.visual.left    = [ [ s:fg, s:purple  ], [ s:fg, s:gray3 ] ]
 let s:p.tabline.left   = [ [ s:fg, s:gray3 ] ]
-let s:p.tabline.tabsel = [ [ s:fg, s:green, 'bold' ] ]
+let s:p.tabline.tabsel = [ [ s:fg, s:green,  ] ]
 let s:p.tabline.middle = [ [ s:gray3, s:gray2 ] ]
-let s:p.tabline.right  = copy(s:p.normal.right)"}}}
+let s:p.tabline.right  = copy(s:p.normal.right)
+"}}}
 
 let g:lightline#colorscheme#intellij#palette = lightline#colorscheme#flatten(s:p)
