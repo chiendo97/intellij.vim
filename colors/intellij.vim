@@ -28,8 +28,8 @@ let s:comment_fg   = { "gui": "#a0a1a7", "cterm": "247" }
 let s:gutter_bg    = { "gui": "#fafafa", "cterm": "231" }
 let s:gutter_fg    = { "gui": "#d4d4d4", "cterm": "252" }
 
-let s:cursor_line  = { "gui": "#f0f0f0", "cterm": "255" }
-let s:color_col    = { "gui": "#f0f0f0", "cterm": "255" }
+let s:cursor_line  = { "gui": "#f2f2f2", "cterm": "255" }
+let s:color_col    = { "gui": "#f2f2f2", "cterm": "255" }
 
 let s:selection    = { "gui": "#bfceff", "cterm": "153" }
 let s:vertsplit    = { "gui": "#f0f0f0", "cterm": "255" }
@@ -92,6 +92,7 @@ call s:h("SpellRare", s:yellow, "", "")
 
 call s:h("StatusLine", s:black, s:cursor_line, "")
 call s:h("StatusLineNC", s:comment_fg, s:cursor_line, "")
+
 call s:h("TabLine", s:comment_fg, s:cursor_line, "")
 call s:h("TabLineFill", s:comment_fg, s:cursor_line, "")
 call s:h("TabLineSel", s:fg, s:bg, "")
