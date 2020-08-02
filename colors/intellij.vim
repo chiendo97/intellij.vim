@@ -90,12 +90,12 @@ call s:h("SpellCap", s:yellow, "", "")
 call s:h("SpellLocal", s:yellow, "", "")
 call s:h("SpellRare", s:yellow, "", "")
 
-call s:h("StatusLine", s:black, s:cursor_line, "")
-call s:h("StatusLineNC", s:comment_fg, s:cursor_line, "")
+call s:h("StatusLine", s:cursor_line, s:fg, "")
+call s:h("StatusLineNC", s:fg, s:cursor_line, "")
 
 call s:h("TabLine", s:comment_fg, s:cursor_line, "")
 call s:h("TabLineFill", s:comment_fg, s:cursor_line, "")
-call s:h("TabLineSel", s:fg, s:bg, "")
+call s:h("TabLineSel", s:bg, s:fg, "")
 
 call s:h("Visual", "", s:selection, "")
 call s:h("VisualNOS", "", s:selection, "")
