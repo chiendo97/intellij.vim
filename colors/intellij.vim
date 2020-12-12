@@ -193,6 +193,11 @@ call s:h("goDeclaration", s:blue, "", "")
 call s:h("goParamType", s:blue, "", "")
 " }}}
 
+" {{{ Typescript
+call s:h("typescriptBraces", s:black, "", "")
+call s:h("typescriptBlock", s:black, "", "")
+" }}}
+
 " Plugins {{{
 " GitGutter
 call s:h("GitGutterAdd", s:green, s:gutter_bg, "")
